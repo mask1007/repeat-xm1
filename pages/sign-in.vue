@@ -31,7 +31,7 @@
                         <i class="fa fa-user"></i>
                     </div>
 
-                    <div class="input-prepend">
+                    <div class="input-prepend" id="last">
                         <input type="text" placeholder="密码">
                         <i class="fa fa-lock"></i>
                     </div>
@@ -40,7 +40,7 @@
                         <span>记住我</span>
                     </div>
                     <nuxt-link class="help" to="/">登录遇到问题</nuxt-link>
-                    <button>登录</button>
+                    <button class="sign-in-btn">登录</button>
                 </form>
             </div>
 
@@ -51,19 +51,19 @@
                 <ul class="">
                     <li>
                         <nuxt-link to="/">
-                            <i class="fa fa-weixin"></i>
+                            <i class="weixin fa fa-weixin"></i>
                         </nuxt-link>
                     </li>
 
                     <li>
                         <nuxt-link to="/">
-                            <i class="fa fa-weibo"></i>
+                            <i class="weibo fa fa-weibo"></i>
                         </nuxt-link>
                     </li>
 
                     <li>
                         <nuxt-link to="/">
-                            <i class="fa fa-qq"></i>
+                            <i class="qq fa fa-qq"></i>
                         </nuxt-link>
                     </li>
                 </ul>
