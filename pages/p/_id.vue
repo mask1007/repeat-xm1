@@ -4,7 +4,7 @@
         <my-header></my-header>
         <div class="note">
             <div class="post">
-
+                 <!--文章正文-->
                 <div class="article">
                     <h1 class="title">你若盛开，清风自来</h1>
                     <div class="author">
@@ -73,9 +73,9 @@
                 <!--文章底部的喜欢和分享-->
                 <div class="meta-bottom">
                     <!--喜欢-->
-                    <div class="like">
+                    <div class="like" :class="{'islike':islike}" @click="islike=!islike">
                         <div class="like-btn">
-                            <a href="#" class="">喜欢</a>
+                            <a href="javascript:void(0)" class="">喜欢</a>
                         </div>
                         <div class="like-num">
                             <a href="#">50</a>
@@ -99,7 +99,7 @@
 
                 </div>
                 <!--留言组件-->
-                <!--<my-comment></my-comment>-->
+                <my-comment></my-comment>
 
             </div>
 
@@ -110,6 +110,7 @@
 </template>
 
 <script>
+    import myComment from '~/components/myComment'
     import myHeader from '~/components/myHeader'
     export default {
         head:{
@@ -122,11 +123,12 @@
         },
         data(){
             return{
-
+                islike:false
             }
         },
         components:{
             myHeader,
+            myComment,
         }
     }
 </script>
